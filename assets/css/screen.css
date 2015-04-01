@@ -54,7 +54,7 @@
     text-decoration: none;
 }
 
-/* Each icon is created by inserting the corret character into the 
+/* Each icon is created by inserting the corret character into the
    content of the :before pseudo element. Like a boss. */
 .i-ghost:before {
     content: "\e000";
@@ -92,7 +92,7 @@ body {
     font-family: 'Roboto Slab', serif;
     font-size: 2.0rem;
     line-height: 1.6em;
-    color: #3A4145;
+    color: black;
 }
 a.fa {
     text-decoration: none;
@@ -175,12 +175,12 @@ a:hover {
 }
 
 a.btn {
-    
+
     text-decoration: none;
-    background-color: #800080;
+    background-color: #cceef2;
     border-radius: 6px;
     -webkit-border-radius: 6px;
-    color: white;
+    color: black;
     display: inline-block;
     font-size: 16px;
     letter-spacing: 1px;
@@ -291,9 +291,9 @@ code, tt {
     font-size: 0.75em;
     /*white-space: pre;*/
     border: 1px solid #E3EDF3;
-    background: #F7FAFB;
+    background: rgb(50,50,50);
     border-radius: 2px;
-    color: #3A4145;
+    color: white;
 }
 
 pre {
@@ -307,7 +307,7 @@ pre {
     font-size: 0.9em;
     white-space: pre;
     overflow: auto;
-    background: #F7FAFB;
+    background: rgb(50,50,50);
     border-radius: 3px;
 }
 
@@ -331,8 +331,8 @@ kbd {
     font-weight: bold;
     background: #f4f4f4;
     border-radius: 4px;
-    box-shadow: 
-        0 1px 0 rgba(0, 0, 0, 0.2), 
+    box-shadow:
+        0 1px 0 rgba(0, 0, 0, 0.2),
         0 1px 0 0 #fff inset;
 }
 
@@ -431,7 +431,7 @@ li {
     margin-bottom: 0rem;
     text-align: center;
     color: #fff;
-    background: rgb(128, 0, 128) no-repeat center center;
+    background: #cceef2 no-repeat center center;
     background-size: cover;
 }
 
@@ -458,8 +458,14 @@ li {
     font-size: 16px;
 }
 
+@font-face {
+   font-family: noramoji;
+   src: url('../fonts/NP_Bandai.otf') format("opentype");
+}
+
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
+    font-family: noramoji;
     margin: 10px 0 10px 0;
     font-size: 5rem;
     letter-spacing: -1px;
@@ -477,12 +483,12 @@ li {
 .post-holder {
     width:100%;
     height: 100%;
-    background: #f2efe8;
+    background: #cceef2;
     position: relative;
 }
 
 .post-holder.odd {
-    background: #800080;
+    background: #22343A;
     color: white;
 }
 
@@ -538,11 +544,11 @@ a.fn-item.active {
     bottom: -40px;
     right: 6%;
     z-index: 1;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
-    border-top: 50px solid #f2efe8;
+    border-top: 50px solid #22343A;
     border-radius: 25px;
 }
 
@@ -866,7 +872,7 @@ a.fn-item.active {
     line-height: 1.5em;
     color: #BBC7CC;
     text-align: center;
-    background: #22343A;
+    background: #f2efe8;
 }
 
 .site-footer a {
@@ -981,7 +987,7 @@ a.fn-item.active {
         top: 0px;
         left: 0px;
         z-index: 99999;
-        background: #f2efe8;
+        background: #cceef2;
         width: 100%;
         text-align: center;
         padding: 4px;
@@ -997,9 +1003,9 @@ a.fn-item.active {
         padding-top: 20px;
     }
     #site-head {
-        -webkit-box-sizing: border-box; 
+        -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         min-height: 240px;
         padding: 15% 0;
         height: 100%;
@@ -1045,7 +1051,7 @@ a.fn-item.active {
     h4 {
         font-size: 2.8rem;
     }
-    
+
     .author-profile {
         padding-bottom: 4rem;
     }
@@ -1237,7 +1243,7 @@ a.fn-item.active {
         max-height: 80px;
     }
 
-    .inner, 
+    .inner,
     .pagination {
         width: auto;
         margin-left: 16px;
@@ -1318,7 +1324,7 @@ a.fn-item.active {
     .post-footer .share a {
         margin: 1.4rem 0.8rem 0 0.8rem;
     }
-    
+
     .author-meta li {
         float: none;
         margin: 0;
@@ -1343,7 +1349,7 @@ a.fn-item.active {
         /*margin-top: 0.8rem;*/
         font-size: 1.1rem;
     }
-    
+
     .author-profile {
         padding-bottom: 2rem;
     }
@@ -1366,7 +1372,7 @@ a.fn-item.active {
     }
 
 }
-   
+
 /* ==========================================================================
    12. Animations
    ========================================================================== */
